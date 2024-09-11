@@ -6,11 +6,15 @@ export class Service {
     databases;
     bucket;
     account;
+    
 
     constructor() {
+        
         this.client
             .setEndpoint(conf.appwriteUrl) // Appwrite endpoint
-            .setProject(conf.appwriteProjectId); // Appwrite project ID
+            .setProject(conf.appwriteProjectId)// Appwrite project ID
+
+            
 
         this.databases = new Databases(this.client); // Initialize Databases service
         this.bucket = new Storage(this.client);      // Initialize Storage service

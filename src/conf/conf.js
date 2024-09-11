@@ -5,6 +5,7 @@ const conf = {
     appwriteCollectionId: String(import.meta.env.VITE_APPWRITE_COLLECTION_ID),
     appwriteBucketId: String(import.meta.env.VITE_APPWRITE_BUCKET_ID),
     appwriteEmailCollectionId: String(import.meta.env.VITE_APPWRITE_EMAIL_COLLECTION_ID),
+    
 }
 
 
